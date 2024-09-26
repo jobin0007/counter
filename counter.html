@@ -6,15 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="counter-value" >
-        0
+    <div id="counter-value" >
+        5
     </div>
-    <button onclick="increment()">
+    <button id="inc" onclick="increment()">
 +
     </button>
-      <button onclick="decrement()">
+      <button id="dec" onclick="decrement()">
       -  
     </button>
+    <script>
+        let a 
+        let b
+       function decrement(){
+         a= document.getElementById("counter-value").innerText;
+        b=a-1
+        console.log(b);
+        
+        document.getElementById("counter-value").innerText = b
+
+        }
+    </script>
 </body>
+
 
 </html>
