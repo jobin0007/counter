@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="counter-value" >
+    <div id="counter-value">
         0
     </div>
-    <button onclick="increment()">
-+
+    <button id="increment" onclick="increment()">
+        +
     </button>
-      <button onclick="decrement()">
-      -  
+    <button id="decrement" onclick="decrement()">
+        -
     </button>
+    <script>
+        let number
+        let num
+
+
+        function increment() {
+            num = document.getElementById("counter-value").innerText
+            number = parseInt(num)
+            number++
+            document.getElementById("counter-value").innerText = number
+        }
+
+        function decrement() {
+            number--
+            document.getElementById("counter-value").innerText = number
+
+        }
+    </script>
 </body>
 
 </html>
